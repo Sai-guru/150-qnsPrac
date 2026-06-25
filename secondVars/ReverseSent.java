@@ -1,7 +1,7 @@
 //ip = "I love India";
 //op = "India love I"
 
-public class Main {
+public class ReverseSent {
     public static void main(String[] args) {
 
         String str = "I love India";
