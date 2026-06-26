@@ -3,7 +3,7 @@
 // Output: 341 , 
 import java.util.Scanner;
 
-public class reverseNum {
+public class ReverseNum {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

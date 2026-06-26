@@ -13,7 +13,7 @@
 import java.util.Scanner;
 
 
-public class digitReducedSubt {
+public class DigitReducedSubt {
 
     public static int reducedSubtraction(int n){
 
@@ -21,6 +21,7 @@ public class digitReducedSubt {
 
         String str = Integer.toString(n);
         int mainNum =0;
+        String res = "";
 
 
         for(int i=0;i<str.length()-1;i++){
@@ -29,7 +30,10 @@ public class digitReducedSubt {
             int dig2 = Character.getNumericValue(str.charAt(i+1));
 
             int diff = Math.abs(dig1-dig2);
-            mainNum = (mainNum*10)+ diff; //each time 10units increases...
+            // mainNum = (mainNum*10)+ diff; //each time 10units increases...
+            // if pushing to string and then converting to int
+            res+=diff;
+            mainNum = Integer.parseInt(res);
 
         }
         return reducedSubtraction(mainNum);

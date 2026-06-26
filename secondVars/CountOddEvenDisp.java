@@ -2,7 +2,7 @@
 //  numbers in the given any digit number
 
 import java.util.Scanner;
-public class countOddEvenDisp {
+public class CountOddEvenDisp {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
