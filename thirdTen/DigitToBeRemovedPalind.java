@@ -17,9 +17,9 @@ public class DigitToBeRemovedPalind {
         while(i<j){
             if(str.charAt(i)!=str.charAt(j)) return false;
             i++;j--;
-            }
-            return true;
         }
+            return true;
+    }
 
     public static int digitRemove_Palind(int num){
          String str = Integer.toString(num);
@@ -31,15 +31,9 @@ public class DigitToBeRemovedPalind {
 
             if(isPalind(remainNum)) return Character.getNumericValue(str.charAt(i));
          }
-
          return -1;
 
     }
-
-    
-
-
-
     public static void main(String args[]) {
 
         
@@ -48,5 +42,4 @@ public class DigitToBeRemovedPalind {
         System.out.println("Result 3: " + digitRemove_Palind(10101));  // Output: -1
 
     }
-
 }
