@@ -35,7 +35,7 @@ public class RearrangedArrayCombo58th {
          myArr.remove(Integer.valueOf(largest));
 
     }
-    System.out.println(resArr);
+    System.out.println(resArr);   //final value
 }
     public static void main(String[] args){
         // int[] arr = {1, 3, 5, 2, 8, 7, 4};
