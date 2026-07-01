@@ -6,10 +6,11 @@ public class Prime{
 
     public static boolean isPrime(int num){
 
-        if(num<=1 || num%2!=0) return false;
         if(num==2) return true;
+        if(num<=1 || num%2==0) return false;
+        
 
-        for(int i=2;i<=Math.sqrt(num);i++){
+        for(int i=3;i<=Math.sqrt(num);i+=2){
             if(num%i==0) return false;
         }
         return true;
@@ -24,11 +25,11 @@ public class Prime{
         while(c < n){
             if(isPrime(startNum)) {
                 c++;
-                System.out.println(startNum + " ");
+                // System.out.println(startNum + " ");
             }
             startNum++;
         }
-        return startNum;
+        return startNum-1;
 
     }
 
@@ -43,6 +44,14 @@ public class Prime{
         return c;
     }
 
+     // Display All Prime Numbers Till N
+    public static void dispPrimeTillN(int n){
+
+        for(int i=2;i<=n;i++){
+            if(isPrime(i)) System.out.print(i+" ");
+        }
+
+    }
 
 
 
@@ -64,6 +73,9 @@ public class Prime{
         // int start = sc.nextInt();
         // int end = sc.nextInt();
         // System.out.println(countPrimeRange(start,end));
+
+        int n = sc.nextInt();
+        dispPrimeTillN(n);
     
 
     }
